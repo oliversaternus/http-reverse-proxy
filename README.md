@@ -1,7 +1,7 @@
 # http-reverse-proxy
 a simple and easily configurable nodeJS reverse-proxy using the http-proxy npm package. It proxies https to http using a configurable routing table.
 
-## how to use
+## How to use
 - install nodeJS: https://nodejs.org/en/download/
 - install pm2: https://pm2.keymetrics.io/docs/usage/quick-start/
 - clone project
