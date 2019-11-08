@@ -1,0 +1,19 @@
+{
+    "options": {
+        "logging": true
+    },
+    "domains": [
+        {
+            "url": "subdomain.domain.com",
+            "port": 2020
+        },
+        {
+            "url": "domain.com",
+            "port": 2020
+        },
+        {
+            "url": "example.com",
+            "port": 3030
+        }
+    ]
+}
