@@ -1,5 +1,5 @@
 # http-reverse-proxy
-a simple and easily configurable nodeJS reverse-proxy using the http-proxy npm package. It proxies https to http using a configurable routing table.
+a simple and easily configurable nodeJS reverse-proxy using the http-proxy npm package. It proxies https to http using a configurable routing table. Websocket connections are also supported.
 
 ## How to use
 - install nodeJS: https://nodejs.org/en/download/
