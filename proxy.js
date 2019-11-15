@@ -14,6 +14,11 @@ apiProxy.on('error', function (err, req, res) {
     res.end();
 });
 
+apiProxy.on('proxyReq', function (proxyReq, req, res, options) {
+    proxyReq.setHeader('X-Forwarded-Host', req.headers.host);
+    proxyReq.setHeader('X-Forwarded-Host', 'https');
+});
+
 function proxyHandler(req, res) {
     try {
         const host = req.headers.host;
