@@ -16,7 +16,7 @@ apiProxy.on('error', function (err, req, res) {
 
 apiProxy.on('proxyReq', function (proxyReq, req, res, options) {
     proxyReq.setHeader('X-Forwarded-Host', req.headers.host);
-    proxyReq.setHeader('X-Forwarded-Host', 'https');
+    proxyReq.setHeader('X-Forwarded-Proto', 'https');
 });
 
 function proxyHandler(req, res) {
