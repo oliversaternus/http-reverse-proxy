@@ -6,8 +6,8 @@ a simple and easily configurable nodeJS reverse-proxy using the http-proxy npm p
 - install pm2: https://pm2.keymetrics.io/docs/usage/quick-start/
 - clone project
 - in project folder run command: npm i
-- in project folder create a "config.json" file, similar to the provided "example-config.json" file. This file specifies the routing table.
-- create a SSL certificate and put the files "privkey.pem" and "fullchain.pem" into the project folder
+- create a SSL certificate with certbot
+- in project folder create a "config.json" file, similar to the provided "example-config.json" file. This file specifies the routing table, options and the paths to your certificates.
 - make sure your firewall is configured to open the port 443
 - in project folder start the proxy server via command: pm2 start proxy.js --name proxy -i max
 - if you want to redirect http to https securely via status code 302 also run the command: pm2 start redirect.js --name redirect -i max
