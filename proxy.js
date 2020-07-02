@@ -54,8 +54,8 @@ function proxyHandler(req, res) {
 }
 
 const server = https.createServer({
-    key: fs.readFileSync(config.certificates.privkey),
-    cert: fs.readFileSync(config.certificates.fullchain)
+    key: fs.readFileSync(fs.realpathSync(config.certificates.privkey)),
+    cert: fs.readFileSync(fs.realpathSync(config.certificates.fullchain))
 }, proxyHandler);
 
 server.on("upgrade", function (req, res) {
