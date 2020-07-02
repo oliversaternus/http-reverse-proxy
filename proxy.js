@@ -52,13 +52,6 @@ function proxyHandler(req, res) {
         res.end();
     }
 }
-console.log({
-    privkey: fs.realpathSync(config.certificates.privkey),
-    fullchain: fs.realpathSync(config.certificates.fullchain)
-});
-console.log({
-    file: fs.readFileSync(fs.realpathSync(config.certificates.fullchain))
-});
 const server = https.createServer({
     key: fs.readFileSync(fs.realpathSync(config.certificates.privkey)),
     cert: fs.readFileSync(fs.realpathSync(config.certificates.fullchain))
