@@ -57,7 +57,7 @@ console.log({
     fullchain: fs.realpathSync(config.certificates.fullchain)
 });
 console.log({
-    file: fs.readFileSync(fs.realpathSync(config.certificates.privkey))
+    file: fs.readFileSync(fs.realpathSync(config.certificates.fullchain))
 });
 const server = https.createServer({
     key: fs.readFileSync(fs.realpathSync(config.certificates.privkey)),
