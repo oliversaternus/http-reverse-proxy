@@ -3,8 +3,8 @@
         "logging": true
     },
     "certificates": {
-        "fullchain": "./fullchain.pem",
-        "privkey": "./privkey.pem"
+        "fullchain": "/etc/letsencrypt/live/domain/fullchain.pem",
+        "privkey": "/etc/letsencrypt/live/domain/privkey.pem"
     },
     "domains": [
         {
