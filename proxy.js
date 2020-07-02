@@ -54,8 +54,8 @@ function proxyHandler(req, res) {
 }
 
 const server = https.createServer({
-    key: fs.readFileSync(__dirname + '/privkey.pem'),
-    cert: fs.readFileSync(__dirname + '/fullchain.pem')
+    key: fs.readFileSync(config.certificates.privkey),
+    cert: fs.readFileSync(config.certificates.fullchain)
 }, proxyHandler);
 
 server.on("upgrade", function (req, res) {
