@@ -2,6 +2,10 @@
     "options": {
         "logging": true
     },
+    "certificates": {
+        "fullchain": "./fullchain.pem",
+        "privkey": "./privkey.pem"
+    },
     "domains": [
         {
             "url": "subdomain.domain.com",
